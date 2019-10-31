@@ -1,0 +1,16 @@
+{
+  "name": "@pmrcunha/wasm-hello-world",
+  "collaborators": [
+    "Paulo Cunha <paulomrcunha@gmail.com>"
+  ],
+  "version": "0.5.0",
+  "files": [
+    "wasm_hello_world_bg.wasm",
+    "wasm_hello_world.js",
+    "wasm_hello_world.d.ts"
+  ],
+  "module": "wasm_hello_world.js",
+  "types": "wasm_hello_world.d.ts",
+  "sideEffects": "false",
+  "repository": "git@github.com:pmrcunha/cra-wasm-test.git"
+}

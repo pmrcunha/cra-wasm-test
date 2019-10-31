@@ -1,12 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// A dependency graph that contains any wasm must all be imported
+// asynchronously. This `bootstrap.js` file does the single async import, so
+// that no one else needs to worry about it again.
+import('./main').catch((e) => console.error('Error importing `index.js`:', e));

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as wasm from './wasm-hello-world';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={() => wasm.greet('React')}>WASM greetings</button>
         <a
           className="App-link"
           href="https://reactjs.org"
